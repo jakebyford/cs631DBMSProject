@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="747.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Submission">
+   <children>
+      <TableView fx:id="tableSubmission" layoutX="164.0" layoutY="118.0" prefHeight="240.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="colUser" prefWidth="96.0" text="User" />
+            <TableColumn fx:id="colFname" prefWidth="86.0" text="First Name" />
+            <TableColumn fx:id="colLname" prefWidth="107.0" text="Last Name" />
+            <TableColumn fx:id="colCourseCode2" prefWidth="81.0" text="Course Code" />
+            <TableColumn fx:id="colSectionCode2" prefWidth="83.0" text="Section Code" />
+            <TableColumn fx:id="colCourseName2" prefWidth="240.0" text="Course Name" />
+            <TableColumn fx:id="colInstructor2" prefWidth="206.0" text="Instructor" />
+         </columns>
+      </TableView>
+      <Label fx:id="classScheduleLabel" layoutX="581.0" layoutY="60.0" prefHeight="50.0" prefWidth="244.0" text="Class Schedule">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="404.0" layoutY="60.0" prefHeight="50.0" prefWidth="177.0" textFill="#12b500">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="418.0" layoutY="374.0" prefHeight="37.0" prefWidth="394.0" text="Section Roster">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="sectionRoster" layoutX="167.0" layoutY="442.0" prefHeight="261.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="rosterColCC" prefWidth="75.0" text="Course Code" />
+          <TableColumn fx:id="rosterColSC" prefWidth="81.0" text="Section Code" />
+            <TableColumn fx:id="rosterColCN" prefWidth="90.0" text="Course Name" />
+            <TableColumn fx:id="rosterColTime" prefWidth="60.0" text="Time" />
+            <TableColumn fx:id="rosterColPlace" prefWidth="75.0" text="Place" />
+            <TableColumn fx:id="rosterColWeekdays" prefWidth="75.0" text="Weekdays" />
+            <TableColumn fx:id="rosterColInstructor" prefWidth="75.0" text="Instructor" />
+            <TableColumn fx:id="rosterColUser" prefWidth="75.0" text="User" />
+            <TableColumn fx:id="rosterColFname" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="rosterColLname" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="rosterColMajor" prefWidth="75.0" text="Major" />
+            <TableColumn fx:id="rosterColYear" prefWidth="75.0" text="Year" />
+        </columns>
+      </TableView>
+      <Button fx:id="returnButton" layoutX="39.0" layoutY="35.0" mnemonicParsing="false" onAction="#switchToRegistrationPage" text="Return to Registration" />
+   </children>
+</AnchorPane>

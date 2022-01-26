@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="776.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="776.0" prefWidth="273.0" style="-fx-background-color: #E5E4E2;">
+         <children>
+            <Label layoutX="76.0" layoutY="41.0" text="Search">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="120.0" text="Course Code" />
+            <Label layoutX="14.0" layoutY="152.0" text="Course Time" />
+            <TextField fx:id="courseCodeTextField" layoutX="105.0" layoutY="116.0" prefHeight="25.0" prefWidth="158.0" promptText="ex. 631" />
+            <TextField fx:id="courseTimeTextField" layoutX="105.0" layoutY="148.0" prefHeight="25.0" prefWidth="158.0" promptText="ex. 9" />
+            <Label layoutX="124.0" layoutY="254.0" text="OR">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="308.0" text="Section Number" />
+            <TextField fx:id="sectionNumTextField" layoutX="105.0" layoutY="304.0" prefHeight="25.0" prefWidth="158.0" promptText="ex. 850" />
+            <Button fx:id="sectionSearchButton" layoutX="56.0" layoutY="363.0" mnemonicParsing="false" onAction="#sectionButtonOnAction" prefHeight="25.0" prefWidth="158.0" text="Search" />
+            <Button fx:id="courseSearchButton" layoutX="56.0" layoutY="210.0" mnemonicParsing="false" onAction="#courseButtonOnAction" prefHeight="25.0" prefWidth="158.0" text="Search" />
+            <Label fx:id="courseMessageLabel" alignment="CENTER" layoutX="14.0" layoutY="183.0" prefHeight="17.0" prefWidth="247.0" />
+            <Label fx:id="sectionMessageLabel" alignment="CENTER" layoutX="14.0" layoutY="336.0" prefHeight="17.0" prefWidth="247.0" />
+            <Button fx:id="searchAllButton" layoutX="56.0" layoutY="403.0" mnemonicParsing="false" onAction="#searchAllButtonOnAction" prefHeight="25.0" prefWidth="158.0" text="Search All" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableCourses" layoutX="277.0" layoutY="56.0" prefHeight="319.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="colCourseCode" prefWidth="44.0" text="Course" />
+          <TableColumn fx:id="colSectionCode" prefWidth="50.0" text="Section" />
+            <TableColumn fx:id="colCourseName" prefWidth="191.0" text="Course Name" />
+            <TableColumn fx:id="colTime" prefWidth="46.0" text="Time" />
+            <TableColumn fx:id="colWeekdays" prefWidth="113.0" text="Weekdays" />
+            <TableColumn fx:id="colInstructor" prefWidth="140.0" text="Instructor" />
+            <TableColumn fx:id="colPlace" prefWidth="79.0" text="Place" />
+            <TableColumn fx:id="colCurrEnroll" prefWidth="120.0" text="Current Enrollment" />
+            <TableColumn fx:id="colMaxEnroll" prefWidth="115.0" text="Max. Enrollment" />
+        </columns>
+      </TableView>
+      <Button layoutX="643.0" layoutY="412.0" mnemonicParsing="false" onAction="#addRowToQueue" prefHeight="25.0" prefWidth="137.0" text="Add Selected Row" />
+      <TableView fx:id="tableQueue" layoutX="276.0" layoutY="452.0" prefHeight="240.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="colCourseCode1" prefWidth="46.0" text="Course" />
+            <TableColumn fx:id="colSectionCode1" prefWidth="47.0" text="Section" />
+            <TableColumn fx:id="colCourseName1" prefWidth="203.0" text="Course Name" />
+            <TableColumn fx:id="colTime1" prefWidth="42.0" text="Time" />
+            <TableColumn fx:id="colPlace1" prefWidth="87.0" text="Place" />
+            <TableColumn fx:id="colWeekdays1" prefWidth="104.0" text="Weekdays" />
+            <TableColumn fx:id="colInstructor1" prefWidth="141.0" text="Instructor" />
+            <TableColumn fx:id="colCurrEnroll1" prefWidth="122.0" text="Current Enrollment" />
+            <TableColumn fx:id="colMaxEnroll1" prefWidth="107.0" text="Max. Enrollment" />
+         </columns>
+      </TableView>
+      <Button layoutX="652.0" layoutY="700.0" mnemonicParsing="false" onAction="#deleteRowFromQueue" text="Remove Selected Row" />
+      <Button fx:id="nextButton" layoutX="1014.0" layoutY="700.0" mnemonicParsing="false" onAction="#submission" prefHeight="25.0" prefWidth="134.0" stylesheets="@application.css" text="Submit" />
+      <Label fx:id="addSelectedRowLabel" alignment="CENTER" layoutX="598.0" layoutY="385.0" prefHeight="17.0" prefWidth="220.0" />
+      <Button fx:id="classSchedButton" layoutX="1014.0" layoutY="737.0" mnemonicParsing="false" onAction="#switchToSubmissionPage" prefHeight="25.0" prefWidth="134.0" text="Class Schedule" />
+   </children>
+</AnchorPane>
