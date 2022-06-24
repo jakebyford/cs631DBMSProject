@@ -15,6 +15,7 @@ Additions made are as followed:
 - JavaFX SDK version 11 or higher
   - JavaFX jar files
   - Scenebuilder
-- MySQL-Connector-Java-8 jar file .\
+- MySQL-Connector-Java-8 jar file .
 
-![](images/er-diagram.png)\
+![](images/er-diagram.png)
+![](images/relational-schema.png)
