@@ -15,11 +15,7 @@ Additions made are as followed:
 - JavaFX SDK version 11 or higher
   - JavaFX jar files
   - Scenebuilder
-- MySQL-Connector-Java-8 jar file .
-
-## ![](images/er-diagram.png)
-
-![](images/relational-schema.png)
+- MySQL-Connector-Java-8 jar file
 
 ## The Relational/Logical Database Design
 
@@ -27,6 +23,12 @@ Our program database is broken down into the following tables: Student, Staff, F
 
 Each table had appropriate columns added to store information. The Register table (with the StudentID, CourseID, and Section ID columns) was created in order to
 insert/delete/edit/reference between the Student, Course, and Section tables.
+
+---
+
+## ![](images/er-diagram.png)
+
+## ![](images/relational-schema.png)
 
 ## Application Design Process
 
