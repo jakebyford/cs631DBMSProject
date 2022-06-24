@@ -34,9 +34,8 @@ Our program interface was broken down into two key components (that was also bro
 
 ### 1. GUI Design
 
-        -a. Login screen
-            -i. Username *aka* *StudentID*
+    - a. Login screen
+        -i. Username *aka* *StudentID*
                 1. Primary Key
-            -ii. Password
-        -b. Student Access screen
-
+        -ii. Password
+    - b. Student Access screen
