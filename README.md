@@ -34,17 +34,15 @@ Our program interface was broken down into two key components (that was also bro
 
 ### 1. GUI Design
 
-- a. Login screen
-  - i. Username _aka_ _StudentID_
-    1. Primary Key
-  - ii. Password
-- b. Student Access screen
-  - i. Selection options
-    1. Course & Time
-    2. Section
-  - ii. Program determines if space is available within selected course and section
-  - iii. Students are limited to one course per year, per semester
-  - iv. Each course is limited to a maximum capacity of student enrollment.
+-a. Login screen
+-i. Username _aka_ _StudentID_ 1. Primary Key
+-ii. Password
+-b. Student Access screen
+-i. Selection options 1. Course & Time 2. Section
+-ii. Program determines if space is available within selected course and section
+
+- iii. Students are limited to one course per year, per semester
+- iv. Each course is limited to a maximum capacity of student enrollment.
 - c. Faculty Access screen
   - i. Course list will generate the following:
     1. Course Code
@@ -76,9 +74,9 @@ We collectively decided to use the programming language JavaFX to incorporate th
 ## Design Difficulties
 
 1. **JavaFX**
-   - a. Creating an ObservableList method of a ‘user’ Object, which executes a SQL statement and returns a list. Furthermore taking that ObservableList and setting cell values in JavaFX TableView.
+   -a. Creating an ObservableList method of a ‘user’ Object, which executes a SQL statement and returns a list. Furthermore taking that ObservableList and setting cell values in JavaFX TableView.
 2. **JDBC-MySQL Connectivity**
-   - a. In order to facilitate a connection between JavaFX and a SQL database, a JDBC driver needed to be installed on our device.
+   -a. In order to facilitate a connection between JavaFX and a SQL database, a JDBC driver needed to be installed on our device.
 
 ## Assumptions
 
