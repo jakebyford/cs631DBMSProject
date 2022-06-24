@@ -2,6 +2,8 @@
 
 ## Introduction
 
+## ![](images/demo.gif)
+
 New College is a new college in Newark and is in need of a New College Application Interface Program that will consist of existing databases. Our program was written using JavaFX and SQL. The program interface will consist of the following:
 
 ## System Requirements
