@@ -17,4 +17,4 @@ Additions made are as followed:
   - Scenebuilder
 - MySQL-Connector-Java-8 jar file .\
 
-![](CS631DBMSProject/studentRegistration/images/er-diagram.jpg)\
+![](CS631DBMSProject/studentRegistration/images/er-diagram.png)\
