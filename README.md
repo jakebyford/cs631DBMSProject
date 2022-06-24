@@ -1,7 +1,5 @@
 # Student Class Registration
 
-## Introduction
-
 ## ![](images/demo.gif)
 
 Here is a quick video of our projects output.
@@ -11,6 +9,8 @@ Copy and paste the link below into your internet browser.
 https://www.youtube.com/watch?v=qu9vDTJts4Q&t=316s
 
 ---
+
+## Introduction
 
 New College is a new college in Newark and is in need of a New College Application Interface Program that will consist of existing databases. Our program was written using JavaFX and SQL. The program interface will consist of the following:
 
