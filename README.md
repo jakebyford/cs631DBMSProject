@@ -34,12 +34,12 @@ Our program interface was broken down into two key components (that was also bro
 
 ### 1. GUI Design
 
--a. Login screen
--i. Username _aka_ _StudentID_ 1. Primary Key
--ii. Password
--b. Student Access screen
--i. Selection options 1. Course & Time 2. Section
--ii. Program determines if space is available within selected course and section
+a. Login screen
+i. Username _aka_ _StudentID_ 1. Primary Key
+ii. Password
+b. Student Access screen
+i. Selection options 1. Course & Time 2. Section
+ii. Program determines if space is available within selected course and section
 
 - iii. Students are limited to one course per year, per semester
 - iv. Each course is limited to a maximum capacity of student enrollment.
